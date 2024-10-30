@@ -51,7 +51,7 @@ def bilinear_interpolation(data, x, y):
     #return the result
     return (math.floor(result[0]),math.floor(result[1]),math.floor(result[2]))
 
-image_start = Image.open("parrot.jpg")
+image_start = Image.open("abstract.jpg")
 data_start = image_start.load()
 
 image_out = Image.new("RGB", (image_start.width, image_start.height))
@@ -87,4 +87,4 @@ for y in range(image_out.height):
         
         
         
-image_out.save("out.png")
+image_out.save("out_bulge.png")

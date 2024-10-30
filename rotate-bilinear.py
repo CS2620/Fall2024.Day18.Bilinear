@@ -52,7 +52,7 @@ def bilinear_interpolation(data, x, y):
     return (math.floor(result[0]),math.floor(result[1]),math.floor(result[2]))
 
 
-image = Image.open("stoat.jpg")
+image = Image.open("abstract.jpg")
 data = image.load()
 new_image = Image.new("RGB", (image.width, image.height))
 new_data = new_image.load()
@@ -85,4 +85,4 @@ for y in range(image.height):
             #data_start[math.floor(new_x), math.floor(new_y)]
         
 
-new_image.save("rotation_bilinear.png")
+new_image.save("out_rotation_bilinear.png")
